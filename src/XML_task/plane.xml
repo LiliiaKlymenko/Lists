@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<planes>
+    <plane id="1">
+        <model>BigPlane</model>
+        <origin>Ukraine</origin>
+        <price>67000000</price>
+        <chars>
+            <class>Freight</class>
+            <seats>15</seats>
+            <crewseats>10</crewseats>
+            <capasity>300</capasity>
+            <radar>true</radar>
+        </chars>
+        <parameters>
+            <length>30</length>
+            <width>12</width>
+            <height>4,5</height>
+        </parameters>
+
+    </plane>
+
+    <plane id="2">
+        <model>BigPlane</model>
+        <origin>Turkish</origin>
+        <price>67000000</price>
+        <chars>
+            <class>Passangers</class>
+            <seats>115</seats>
+            <crewseats>10</crewseats>
+            <capasity>200</capasity>
+            <radar>false</radar>
+        </chars>
+        <parameters>
+            <length>35</length>
+            <width>12,8</width>
+            <height>3,6</height>
+        </parameters>
+    </plane>
+
+    <plane id="3">
+        <model>BigPlane</model>
+        <origin>USA</origin>
+        <price>67000000</price>
+        <chars>
+            <class>Firefighter</class>
+            <seats>6</seats>
+            <crewseats>6</crewseats>
+            <capasity>400</capasity>
+            <radar>true</radar>
+        </chars>
+        <parameters>
+            <length>9</length>
+            <width>5</width>
+            <height>2,1</height>
+        </parameters>
+    </plane>
+</planes>
