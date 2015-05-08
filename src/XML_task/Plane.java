@@ -18,6 +18,14 @@ public class Plane {
     String model;
     double price;
 
+    public Plane(String origin, String model, double price, List<Object> characters, List<Object> parameters) {
+        this.origin = origin;
+        this.model = model;
+        this.price = price;
+        this.characters = characters;
+        this.parameters = parameters;
+    }
+
     public String getModel() {
         return model;
     }
@@ -42,10 +50,34 @@ public class Plane {
         this.price = price;
     }
 
-    List<Objects> characters = new ArrayList<Objects>();
-    List<Objects> parameters = new ArrayList<Objects>();
+    public List<Object> getCharacters() {
+        return characters;
+    }
+
+    public void setCharacters(List<Object> characters) {
+        this.characters = characters;
+    }
+
+    public List<Object> getParameters() {
+        return parameters;
+    }
+
+    public void setParameters(List<Object> parameters) {
+        this.parameters = parameters;
+    }
+
+    List<Object> characters = new ArrayList<Object>();
+    List<Object> parameters = new ArrayList<Object>();
 
 
-
-
+    @Override
+    public String toString() {
+        return "Plane{" +
+                "origin='" + origin + '\'' +
+                ", model='" + model + '\'' +
+                ", price=" + price +
+                ", characters=" + characters.toString() +
+                ", parameters=" + parameters.toString() +
+                '}';
+    }
 }
