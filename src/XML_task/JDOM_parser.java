@@ -74,7 +74,8 @@ public class JDOM_parser {
                 plane_params.add(params_list.getChildText("width"));
                 plane_params.add(params_list.getChildText("height"));
 
-                new Plane(node.getChildText("model"), node.getChildText("origin"), Double.parseDouble(node.getChildText("price")), plane_chars, plane_params);
+                
+                System.out.print(new Plane(node.getChildText("model"), node.getChildText("origin"), Double.parseDouble(node.getChildText("price")), plane_chars, plane_params).toString());
                 }
 
 
