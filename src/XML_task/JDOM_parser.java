@@ -35,8 +35,6 @@ public class JDOM_parser {
                 System.out.println("\nPlane #" + i + ":");
 
 
-
-
                 System.out.println("Model : " + node.getChildText("model"));
                 System.out.println("Origin : " + node.getChildText("origin"));
                 System.out.println("Price : " + node.getChildText("price"));
@@ -44,14 +42,14 @@ public class JDOM_parser {
 
                 List chars = node.getChildren("chars");
 
-                    Element chars_list = (Element) chars.get(0);
-                    System.out.println("\nCharacteristics:");
+                Element chars_list = (Element) chars.get(0);
+                System.out.println("\nCharacteristics:");
 
-                    System.out.println("--Class: " + chars_list.getChildText("class"));
-                    System.out.println("--Seats: " + chars_list.getChildText("seats"));
-                    System.out.println("--Crewseats: " + chars_list.getChildText("crewseats"));
-                    System.out.println("--Capasity: " +chars_list.getChildText("capasity"));
-                    System.out.println("--Radar: " + chars_list.getChildText("radar"));
+                System.out.println("--Class: " + chars_list.getChildText("class"));
+                System.out.println("--Seats: " + chars_list.getChildText("seats"));
+                System.out.println("--Crewseats: " + chars_list.getChildText("crewseats"));
+                System.out.println("--Capasity: " + chars_list.getChildText("capasity"));
+                System.out.println("--Radar: " + chars_list.getChildText("radar"));
 
                 List<Object> plane_chars = new ArrayList<Object>();
                 plane_chars.add(chars_list.getChildText("class"));
@@ -74,9 +72,9 @@ public class JDOM_parser {
                 plane_params.add(params_list.getChildText("width"));
                 plane_params.add(params_list.getChildText("height"));
 
-                
+
                 System.out.print(new Plane(node.getChildText("model"), node.getChildText("origin"), Double.parseDouble(node.getChildText("price")), plane_chars, plane_params).toString());
-                }
+            }
 
 
         } catch (IOException io) {

@@ -8,7 +8,7 @@ import java.util.List;
  * Created by Liliia_Klymenko on 07-May-15.
  */
 public class AbonentDAO extends AbstractDAO<Integer, Abonent> {
-    public static final String SQL_SELECT_ALL_ABONENTS="SELECT * FROM phonebook";
+    public static final String SQL_SELECT_ALL_ABONENTS="SELECT  `data` ,  `temperature` ,  `precipitation` FROM  `weather` JOIN  `region` ON  `region`.`id_region` =  `weather`.`id_region` WHERE ( `region`.`name` =  \"?\")";
     public static final String SQL_SELECT_ABONENTS_BY_LASTNAME=
             "SELECT ID, Phone FROM phonebook WHERE LastName=Nina";
     @Override
